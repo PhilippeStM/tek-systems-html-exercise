@@ -46,19 +46,23 @@ p {
 .gallery-photo {
     width: 250px;
     height: 250px;
-    margin: 5px;
+    margin: 10px;
     object-fit: cover;
-    -webkit-transition: .2s ease-in-out;
-	transition: .2s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    border-radius: 25px;
+    opacity: .8;
 }
 
 .gallery-photo:hover {
-    -webkit-transform: scale(1.04);
-    transform: scale(1.04);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    border-radius: 50px;
+    opacity: 1;
 }
 
 /* This is for cell phones/small devices. */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
     .sm p {
         font-size: larger;
     }
