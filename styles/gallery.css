@@ -1,0 +1,75 @@
+* {
+    margin: 10;
+}
+
+body {
+    background-image: linear-gradient(to right, rgba(138, 138, 138, 0.466),rgba(255, 153, 0, 0.308));
+    object-fit: contain;
+    min-height: auto;
+    width: auto;
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    text-align: center;
+    margin: 25px 0 0 0;
+}
+
+a {
+    margin: 0 25px 0 25px;
+    color: rgb(0, 0, 131);
+    font-size: x-large;
+}
+
+a:hover {
+    color: red;
+}
+
+h2 {
+    text-align: center;
+    color: rgba(3, 51, 114, 0.829);
+}
+
+p {
+    font-size: x-large;
+    text-align: center;
+}
+
+#gallery {
+    width: 550px;
+    margin: auto;
+}
+
+.gallery-photo {
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    object-fit: cover;
+    -webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.gallery-photo:hover {
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+}
+
+/* This is for cell phones/small devices. */
+@media only screen and (max-width: 480px) {
+    .sm p {
+        font-size: larger;
+    }
+
+    .sm #gallery {
+        width: 300px;
+    }
+    
+    .sm .gallery-photo {
+        width: 125px;
+        height: 125px;
+    }
+
+}
