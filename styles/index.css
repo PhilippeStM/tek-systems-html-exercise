@@ -52,6 +52,7 @@ ul {
 }
 
 /* This is for cell phones/small devices. */
+
 @media only screen and (max-width: 500px) {
     .sm p, ul {
         font-size: 1.25rem;

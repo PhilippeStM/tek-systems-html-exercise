@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact.</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="../styles/contact.css">
 </head>
 
@@ -11,16 +12,20 @@
 
     <main>
         <h2>Contact Me!</h2>
+
+        <!-- This form has the "mail this to" api which sends emails to my account -->
+
         <form action="https://mailthis.to/philippestm@yahoo.com" method="POST">
-            <input type="text" placeholder="Name" />
+            <input type="text" name="name" placeholder="Name" />
             <br>
-            <input type="email" placeholder="Email" />
+            <input type="email" name="_replyto" placeholder="Email" />
             <br>
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message Here..."></textarea>
             <br>
-            <button type="submit">Submit</button>
+            <button type="submit" value="Send Email">Submit</button>
             <button type="reset">Reset</button>
         </form>
+
     </main>
 
     <nav>
